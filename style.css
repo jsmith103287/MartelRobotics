@@ -1,0 +1,421 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Raleway", Tahoma, sans-serif;
+    background-color: #f2f8f5;
+}
+
+
+button {
+    font-family: "Comfortaa", Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 1.1rem;
+    background-color: #82c0cc;
+    border-radius: 5px;
+    color: #332e3c;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+button:hover {
+    background-color: #489fb5;
+}
+
+
+/*Header*/
+
+nav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    margin-bottom: 2.5rem;
+    justify-content: space-between;
+    background-color: #ede7e3;
+    padding: 1.2rem 0;
+}
+
+nav img {
+    max-width: 2.5rem;
+    height: auto;
+    background-color: transparent;
+}
+
+nav ul {
+    position: relative;
+    float: right;
+    display: block;
+    text-align: center;
+    margin: 0.625rem 2.5rem 0 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    position: relative;
+    right: 0px;
+    padding: 0.625rem;
+}
+
+nav a {
+    text-decoration: underline 0.15em rgba(22, 105, 122, 0);
+    transition: text-decoration-color 300ms;
+    color: rgb(22, 105, 122);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration-color: rgba(22, 105, 122, 1);
+}
+
+#name {
+    text-decoration: none;
+    margin-left: 2.5rem;
+    font-family: "Comfortaa", Verdana, Tahoma, sans-serif;
+    color: #489fb5;
+    font-size: 1.5rem;
+    
+}
+
+#name a {
+    color: #332e3c;
+    cursor: pointer;
+}
+
+.banner {
+    position: relative;
+    margin-top: 5rem;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.banner-container {
+    background-image: url('./Images/pexels-thisisengineering-3912959.jpg');
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 1.5rem;
+    padding-top: 5rem;
+}
+
+.banner h2 {
+    font-size: 2.8rem;
+    color: #11697a;
+    padding: 3.5rem 0 1.5rem 0;
+    font-family: "Josefin Sans", Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.banner h3 {
+    color: #4d4854;
+    font-weight: normal;
+    padding-bottom: 1rem;
+}
+
+.company-banner {
+    background-color: rgba(242, 248, 245, 0.7);
+    max-height: 500px;
+    width: 40%;
+    padding-bottom: 2.5rem;
+    margin-left: 2.5rem;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 820px) {
+    .mobilename {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .mobilename {
+        margin-left: 0.8rem;
+        margin-top: 0.625rem;
+        text-decoration: none;
+        font-size: larger;
+    }
+    
+    nav {
+        justify-content: space-between;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    #name {
+        display: none;
+    }
+
+    nav li {
+        padding: auto;
+    }
+
+    nav ul {
+        display: inline-flex;
+        margin-right: 0.625rem;
+    }
+
+    .banner-container {
+        max-width: 100%;
+        padding-top: 0;
+        margin-bottom: 2.5rem;
+    }
+
+    .company-banner {
+        text-align: center;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .banner h2 {
+        padding: 0;
+        color: #82c0cc;
+        text-shadow: 1px 2px #4d4854;
+        padding-top: 5.5rem;
+    }
+
+    .banner .human {
+        color: #82c0cc;
+    }
+
+    .banner h3 {
+        display: none;
+    }
+
+    .banner button {
+        margin-top: 6rem;
+    }
+}
+
+/*Subbanner*/
+
+.subbanner {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.missionstate {
+    margin: 2.5rem 0 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    height: auto;
+    line-height: 1.5;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.subbanner h2 {
+    font-size: 2.3rem;
+    font-family: "Josefin Sans", Verdana, Tahoma, sans-serif;
+    color: #11697a;
+}
+
+.subbanner button {
+    margin-top: 2.5rem;
+    width: 10rem;
+    margin: auto;
+}
+
+.subbanner h3 {
+    margin-bottom: 2.5rem;
+    color: #4d4854;
+}
+
+.subbanner img {
+    border-radius: 20%;
+    margin-right: 5.5rem;
+    margin-top: 2.5rem;
+    margin-left: 5.5rem;
+    height: 300px;
+    overflow: clip;
+}
+
+@media only screen and (max-width: 820px) {
+    .subbanner img {
+        max-width: 100%;
+        margin: auto;
+        height: auto;
+    }
+
+    .subbanner {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .subbanner h3 {
+        display: flex;
+    }
+
+    .missionstate {
+        justify-content: center;
+        align-content: center;
+        max-width: 100%;
+        margin: 2rem 1rem 2.5rem 1rem;
+
+    }
+
+
+}
+
+
+/*Product Line*/
+
+.product-range {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.product-range img {
+    border-radius: 20%;
+}
+
+.product-range h3 {
+    font-family: "Raleway", Verdana, sans-serif;
+    color: #4d4854;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.product {
+    margin: 2.5rem;
+}
+
+.product-img {
+    width: 400px;
+    overflow: hidden;
+    height: auto;
+    transition: opacity 300ms;
+}
+
+.product-img:hover {
+    opacity: 0.5;
+}
+
+.range h2 {
+    color: #11697a;
+    font-family: "Josefin Sans", Verdana, Tahoma, sans-serif;
+    font-size: 2.3rem;
+    margin-top: 2.5rem;
+}
+
+.product-range a {
+    text-decoration: underline 0.15em rgba(22, 105, 122, 0);
+    transition: text-decoration-color 300ms;
+    cursor: pointer;
+}
+
+.product-range a:hover {
+    text-decoration-color: rgba(22, 105, 122, 1);
+}
+
+.range {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 820px) {
+    .product {
+        margin-bottom: 1.3rem;
+        margin-top: 1.3rem;
+    }
+}
+
+/*Staff*/
+
+.staff h2 {
+    font-family: "Josefin Sans", Verdana, Tahoma, sans-serif;
+    font-size: 2.3rem;
+    margin-top: 2.5rem;
+    color: #11697a;
+    margin-bottom: 2.5rem;
+}
+
+.staff-container {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.person img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 20%;
+}
+
+.staff h3 {
+    margin-top: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.staff h3, h4 {
+    color: #4d4854;
+}
+
+@media only screen and (max-width: 820px) {
+    .person img {
+        min-width: 100%;
+    }
+
+    .staff-container {
+        flex-direction: column;
+    }
+
+    .person {
+        margin-bottom: 2rem;
+    }
+}
+
+/*Footer*/
+
+footer h2 {
+    color: #11697a;
+    font-family: "Comfortaa", Verdana, sans-serif;
+    padding-bottom: 0.3rem;
+    margin-top: 3rem;
+}
+
+footer h3 {
+    color: #4d4854;
+}
+
+.copyright {
+    margin-top: 2.5rem;
+    text-align: left;
+    color: #332e3c;
+    font-family: "Raleway", Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 820px) {
+    footer h2 {
+        margin-top: 0px;
+    }
+}
